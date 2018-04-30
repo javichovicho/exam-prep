@@ -11,6 +11,8 @@ public class CarServicingApp{
 		String service;
 		String branchLocation;
 		String day;
+		String word;
+
 
 		//object
 		CarServicing myObject = new CarServicing();
@@ -29,7 +31,9 @@ public class CarServicingApp{
 		day = myObject.getDay();
 		JOptionPane.showMessageDialog(null, "The day is: " + day);
 
-		JOptionPane.showMessageDialog(null, myObject.wordManipulation("program"));
+		word = JOptionPane.showInputDialog(null, "Please enter a word");
+
+		JOptionPane.showMessageDialog(null, myObject.wordManipulation(word));
 	}
 
 }
